@@ -93,7 +93,7 @@ describe('Strategy#userProfile', function() {
     it('call the callback with an error object', function() {
       expect(error).to.not.be.undefined;
       expect(error.name).to.equal('SyntaxError');
-      expect(error.message).to.equal('Unexpected token .');
+      expect(error.message).to.equal('Unexpected token . in JSON at position 63');
     });
   });
 
