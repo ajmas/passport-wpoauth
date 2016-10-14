@@ -74,7 +74,7 @@ describe('profile.parse', function() {
     it('should throw an error', function() {
       expect(error).to.not.be.undefined;
       expect(error.name).to.equal('SyntaxError');
-      expect(error.message).to.equal('Unexpected token / in JSON at position 4');
+      expect(error.message).to.match(/Unexpected token \//);
     });
   });
 });
